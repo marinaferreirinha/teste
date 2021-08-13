@@ -1,2 +1,9 @@
 ---
 # tasks file for teste
+- name: install packages
+  include_tasks: install.yaml
+  when: "job_type == install"
+
+- name: uninstall packages
+  include_tasks: uninstall.yaml
+  when: "job_type == uninstall"

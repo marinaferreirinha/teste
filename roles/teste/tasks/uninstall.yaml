@@ -1,0 +1,6 @@
+---
+- name: uninstall packages
+  yum:
+    name: "{{ item }}"
+    state: absent
+  loop: "{{ packages }}"

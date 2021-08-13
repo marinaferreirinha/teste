@@ -1,0 +1,7 @@
+---
+- name: Install ans uninstall packages
+  hosts: all
+  become: yes
+  gather_facts: no
+  roles: 
+    - roles: teste
